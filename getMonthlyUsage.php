@@ -2,7 +2,7 @@
 $targetMonth = "12/2022";
 $targetId = "";// Target ID
 $endpoint = "https://cloud.gravityzone.bitdefender.com/api/v1.0/jsonrpc/licensing";
-$response = sendRequest($targetId, $endpoint);
+$response = sendRequest($targetId, $endpoint, $targetMonth);
 echo "Response from API: " . $response . "\r\n";
 function sendRequest($targetId, $endpoint, $targetMonth)
 {
